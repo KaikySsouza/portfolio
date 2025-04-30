@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar"   
-function Layouts({children}) {
+function MainLayouts({children}) {
 
 
     return (
@@ -12,5 +12,5 @@ function Layouts({children}) {
     
 }
 
-export default Layouts
+export default MainLayouts
 

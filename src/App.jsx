@@ -1,14 +1,15 @@
 
 // import Button  from "./components/Button";
-import Layouts from "./layouts/Mainlayouts"
+import MainLayouts  from "./layouts/MainLayouts"
+import Home from "./pages/Home/home"
 
 function App() {
  
 
   return (
     <div>
-      <Layouts />
-      
+      <MainLayouts />
+      <Home />
     
     </div>
   )
