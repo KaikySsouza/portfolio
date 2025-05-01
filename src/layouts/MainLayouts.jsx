@@ -6,7 +6,7 @@ function MainLayouts({children}) {
         <div>
            <Navbar />
            <main>{children}</main>
-
+        
         </div>
     )
     

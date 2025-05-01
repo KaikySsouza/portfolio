@@ -1,3 +1,5 @@
+import SoftSkills from "./SoftSkills/Softskills";
+import HardSkills from "./HardSkills/HardSkills";
 function About() {
   return (
     <div>
@@ -7,7 +9,7 @@ function About() {
             width={510}
             src="/images/solo.img2.jpg"
             alt="solo.png"
-            className="rounded-2xl m-20"
+            className="rounded-2xl m-20 hidden md:block"
           />
           <div className="bg-[#1F2937] p-8 rounded-2xl  mx-auto break-words ">
             <h2 className="text-[25px] w-[60vh] font-light m-6 text-justify text-gray-100 leading-relaxed ">
@@ -26,47 +28,10 @@ function About() {
           </div>
         </div>
       </section>
+      
+    <HardSkills/>
 
-      <section className="flex ">
-        <div className="block">
-          <h2 className="text-center text-[45px] text-white">Habilidades e Serviços</h2>
-          <p className="text-center text-[25px] text-white">
-            Estas são minhas habilidades de trabalho e serviços que realizei.
-          </p>
-          <div className="flex text-center items-center justify-center  mt-3 ">
-
-            <div className="m-20 bg-[#1a1b26] p-[30px] rounded-2xl">
-              <img src="/icons/react-original.svg" alt="react.svg" width={110} className="ml-[33%] " />
-              <span className="text-[25px] text-white">React</span>
-              <p className="text-[15px] text-white">
-                React.js para desenvolvimento de front-end e interface de usuário.
-              </p>
-            </div>
-
-            <div className="m-20 bg-[#1a1b26] p-[30px] rounded-2xl">
-              <img src="/icons/nodejs-original.svg" alt="node.svg" width={110} className="ml-[33%] " />
-              <span className="text-[25px] text-white">Node.JS e Express.js</span>
-              <p className="text-[15px] text-white">
-                Node.JS e Express.js para desenvolvimento de APIs de backend.
-              </p>
-            </div>
-
-            <div className="m-20 bg-[#1a1b26] p-[30px] rounded-2xl">
-              <img src="/icons/mongodb-plain-wordmark.svg" alt="mongodb.svg" width={110} className="ml-[33%] " />
-              <span className="text-[25px] text-white">Banco de dados MongoDB</span>
-              <p className="text-[15px] text-white">
-                MongoDB para gerenciamento de banco de dados da API de backend.
-              </p>
-            </div>
-
-            <div className="m-20 bg-[#1a1b26] p-[30px] rounded-2xl">
-              <img src="/icons/tailwindcss-original.svg" alt="tailwind.svg" width={110} className="ml-[33%]" />
-              <span className="text-[25px] text-white">TailwindCSS e ShadcnUI</span>
-              <p className="text-[15px] text-white">TailwindCSS é um framework CSS que prioriza a utilidade.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+    <SoftSkills/>
     </div>
   );
 }

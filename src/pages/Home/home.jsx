@@ -6,11 +6,11 @@ function Home() {
     <div>
       <section className="flex items-center justify-center min-h-screen ">
         <div className=" flex ">
-          <div className="bg-[#1F2937] p-8 rounded-2xl  mx-auto break-words ">
+          <div className="bg-[#1F2937] p-10  rounded-2xl  mx-auto break-words ">
             <h1 className="text-[40px] text-start ml-3.5  text-orange-500 ">
               Olá! Meu nome é Kaiky
             </h1>
-            <p className=" text-[25px] w-[60vh] font-light m-5 text-justify text-gray-100 leading-relaxed">
+            <p className=" text-[25px] w-[55vh] font-light m-5 text-justify text-gray-100 leading-relaxed">
               Sou desenvolvedor front-end, e este portfólio mostra um pouco do
               que eu posso construir com código e criatividade.Sou estudante de
               Ciência da Computação, tenho 19 anos e sou apaixonado por carreira
