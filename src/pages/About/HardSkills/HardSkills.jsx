@@ -2,8 +2,12 @@ function HardSkills() {
   return (
     <div>
       <section className="block">
-        <div className="text-center justify-center">
-          <h2 className="text-[45px] text-white">Habilidades e Serviços</h2>
+        <div class="w-full flex justify-center">
+          <div class="w-1/2 border-t border-gray-500 mt-[5%]"></div>
+        </div>
+        <div className="text-center justify-center ">
+          <h2 className="text-[45px] text-white mt-25">Habilidades e Serviços</h2>
+          
           <p className=" text-[25px] text-white">
             Estas são minhas habilidades de trabalho e serviços que realizei.
           </p>
@@ -38,7 +42,7 @@ function HardSkills() {
             </p>
           </div>
 
-          <div className=" sm:w-1/2  md:w-1/4   bg-[#1a1b26] p-[77px] rounded-2xl shrink-0">
+          <div className="sm:w-1/2 md:w-1/4  p-[77px] bg-[#1a1b26] rounded-2xl shrink-0">
             <img
               src="/icons/react-original.svg"
               alt="react.svg"
@@ -51,7 +55,7 @@ function HardSkills() {
             </p>
           </div>
 
-          <div className="sm:w-1/2 md:w-1/4    bg-[#1a1b26] p-[77px] rounded-2xl shrink-0">
+          <div className="sm:w-1/2 md:w-1/4  bg-[#1a1b26] p-[77px] rounded-2xl shrink-0">
             <img
               src="/icons/nodejs-original.svg"
               alt="node.svg"

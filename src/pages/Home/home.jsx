@@ -18,21 +18,25 @@ function Home() {
               tecnologia.Estou construindo minha carreira sempre buscando
               aplicar boas práticas de usabilidade e performance.
             </p>
-            <div className="ml-3.5 space-x-8 ">
+            <div className="inline-flex ml-3.5 space-x-8 ">
+              <div className="bg-[#1a1b268a] w-[100px] h-[55px] rounded-2xl hover:bg-[#19212c]">
               <a
                 href="https://github.com/KaikySsouza"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer" className="p-6"
               >
-                <FontAwesomeIcon icon={faGithub} size="3x" />
+                <FontAwesomeIcon icon={faGithub} size="3x" className="mt-1" />
               </a>
+              </div>
+              <div className="bg-[#1a1b268a] w-[100px] h-[55px] rounded-2xl hover:bg-[#19212c]">
               <a
                 href="https://www.linkedin.com/in/kaiky-souza-7202a5265/"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer" className="p-7"
               >
-                <FontAwesomeIcon icon={faLinkedin} size="3x" />
+                <FontAwesomeIcon icon={faLinkedin} size="3x" className="mt-1"/>
               </a>
+              </div>
             </div>
           </div>
           <div className="ml-[190px]">

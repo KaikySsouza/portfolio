@@ -7,6 +7,7 @@ function About() {
         <div className="flex">
           <img
             width={510}
+           
             src="/images/solo.img2.jpg"
             alt="solo.png"
             className="rounded-2xl m-20 hidden md:block"
