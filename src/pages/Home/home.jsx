@@ -48,13 +48,11 @@ typewriter
   return (
     <div>
 
-      <section className="flex items-center justify-center min-h-screen ">
+      <section className="flex text-left items-center justify-center min-h-screen ">
         <div className="flex">
           <div className="">
-            <h1 id="maquina" className="text-[35px] mb-4">
-              
-            </h1>
-            <p className="text-[20px] w-[105vh] text-left">
+            <h1 id="maquina" className="text-[35px] mb-4 m-5"> </h1>
+            <p className="text-[25px] text-justify w-[120vh] justify-between m-2 ">
               Sou desenvolvedor front-end, e este portfólio mostra um pouco do
               que eu posso construir com código e criatividade.Sou estudante de
               Ciência da Computação, tenho 19 anos e sou apaixonado por carreira
@@ -62,8 +60,14 @@ typewriter
               tecnologia.Estou construindo minha carreira sempre buscando
               aplicar boas práticas de usabilidade e performance.
             </p>
-            <div className="inline-flex  space-x-8 mt-[5vh]">
-              <div className="bg-[#1a1b268a] w-[100px] h-[55px] rounded-2xl hover:bg-[#19212c]">
+
+            <div className=""> 
+            <div className="bg-[#1a1b268a] hover:bg-[#19212c]  m-2 w-[37vh] text-center p-[10px] rounded-2xl">
+              <a href="youtube.com.br">Currículo</a>
+            </div>
+
+            <div className="inline-flex  space-x-8 mt-[5vh] m-2">
+              <div className="bg-[#1a1b268a] w-[95px] h-[52px] rounded-2xl hover:bg-[#19212c]">
               <a
                 href="https://github.com/KaikySsouza"
                 target="_blank"
@@ -72,7 +76,7 @@ typewriter
                 <FontAwesomeIcon icon={faGithub} size="3x" className="mt-1" />
               </a>
               </div>
-              <div className="bg-[#1a1b268a] w-[100px] h-[55px] rounded-2xl hover:bg-[#19212c]">
+              <div className="bg-[#1a1b268a] w-[95px] h-[52px] rounded-2xl hover:bg-[#19212c]">
               <a
                 href="https://www.linkedin.com/in/kaiky-souza-7202a5265/"
                 target="_blank"
@@ -81,9 +85,10 @@ typewriter
                 <FontAwesomeIcon icon={faLinkedin} size="3x" className="mt-1"/>
               </a>
               </div>
+              </div>
             </div>
           </div>
-          <div className="ml-[190px]">
+          <div className="">
              <Cloud>
     {icons}
     <a
