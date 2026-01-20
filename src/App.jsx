@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import MainLayouts  from "./layouts/MainLayouts"
+import MainLayouts from "./layouts"
 import Home from "./pages/Home/home"
 import About from "./pages/About"
 import Project from "./pages/Project/Projects"
@@ -22,6 +22,10 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
+
+      <About/>
+      <Project/>
+      <Contact/>
     </div>
   )
 }
