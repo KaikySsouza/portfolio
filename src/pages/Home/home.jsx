@@ -87,8 +87,37 @@ function Home() {
               tecnologia.Estou construindo minha carreira sempre buscando
               aplicar boas práticas de usabilidade e performance.
             </p>
+            <div className=" mt-[4vh]"> 
+              <a href="/pdf/Currículo.pdf (1).pdf"   className="flex bg-[#e64e4e] p-2.5 w-[30vh] justify-center rounded-2xl ">CURRICULO</a></div>
+            
+            <div className="flex overflow-y-hidden space-x-8 mt-[3vh] ">
+              <div className="bg-[#1a1b268a] w-[95px] h-[52px] rounded-2xl hover:bg-[#19212c]">
+                <a
+                  href="https://github.com/KaikySsouza"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex justify-center  "
+                >
+                  <FontAwesomeIcon icon={faGithub} size="3x" className="mt-1" />
+                </a>
+              </div>
+              <div className="bg-[#1a1b268a] w-[95px] h-[52px] rounded-2xl hover:bg-[#19212c]">
+                <a
+                  href="https://www.linkedin.com/in/kaiky-souza-7202a5265/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex justify-center"
+                >
+                  <FontAwesomeIcon
+                    icon={faLinkedin}
+                    size="3x"
+                    className="mt-1"
+                  />
+                </a>
+              </div>
+            </div>
           </div>
-          <div className="flex relative "> 
+          <div className="flex relative ">
             <Cloud>
               {icons}
               <a
@@ -106,33 +135,6 @@ function Home() {
             </Cloud>
           </div>
         </div>
-        {/*      <div className="bg-[#1a1b268a] hover:bg-[#19212c]  m-2 w-[37vh] text-center p-[10px] rounded-2xl">
-          <a href="youtube.com.br">Currículo</a>
-        </div>
-
-    <div className="inline-flex  space-x-8 mt-[5vh] m-2">
-          <div className="bg-[#1a1b268a] w-[95px] h-[52px] rounded-2xl hover:bg-[#19212c]">
-            <a
-              href="https://github.com/KaikySsouza"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-6"
-            >
-              <FontAwesomeIcon icon={faGithub} size="3x" className="mt-1" />
-            </a>
-          </div>
-          <div className="bg-[#1a1b268a] w-[95px] h-[52px] rounded-2xl hover:bg-[#19212c]">
-            <a
-              href="https://www.linkedin.com/in/kaiky-souza-7202a5265/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-7"
-            >
-              <FontAwesomeIcon icon={faLinkedin} size="3x" className="mt-1" />
-            </a>
-          </div>
-        </div>
-        */}
       </section>
     </div>
   );
