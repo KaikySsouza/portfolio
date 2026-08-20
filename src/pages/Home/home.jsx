@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+ import { GoDownload } from "react-icons/go";
 import { Cloud, renderSimpleIcon } from "react-icon-cloud";
 import {
   siJavascript,
@@ -23,24 +24,24 @@ import {
 } from "simple-icons";
 
 function Home() {
-  const maquina = document.getElementById("maquina");
+  // const maquina = document.getElementById("maquina");
 
-  // eslint-disable-next-line no-undef
-  const typewriter = new Typewriter(maquina, {
-    autoStart: false,
-    loop: true,
-    delay: 75,
-  });
+  // // eslint-disable-next-line no-undef
+  // const typewriter = new Typewriter(maquina, {
+  //   autoStart: false,
+  //   loop: true,
+  //   delay: 75,
+  // });
 
-  // eslint-disable-next-line no-undef
-  typewriter
+  // // eslint-disable-next-line no-undef
+  // typewriter
 
-    .typeString("Meu nome é </Kaiky>")
-    .pauseFor(2500)
-    .deleteChars(20)
-    .typeString("Seja bem vindo ao meu portfolio")
-    .pauseFor(2500)
-    .start();
+  //   .typeString("Meu nome é </Kaiky>")
+  //   .pauseFor(2500)
+  //   .deleteChars(20)
+  //   .typeString("Seja bem vindo ao meu portfolio")
+  //   .pauseFor(2500)
+  //   .start();
 
   const icons = [
     siJavascript,
@@ -57,7 +58,7 @@ function Home() {
     siGithub,
     siGit,
     siSequelize,
-    siMysql,
+    siMysql, 
     siMongodb,
     siFirebase,
     siClickup,
@@ -72,69 +73,30 @@ function Home() {
   });
 
   return (
-    <div className="">
-      <section className="flex items-center min-h-screen ">
-        <div className="flex gap-[15vh] ">
-          <div className="m-4 ">
-            <h1 id="maquina" className="text-[35px] mt-[5vh] m-3 flex-col">
-              {" "}
-            </h1>
-            <p className="text-[20px] w-[95vh] text-justify  indent-3">
-              Sou desenvolvedor front-end, e este portfólio mostra um pouco do
-              que eu posso construir com código e criatividade.Sou estudante de
-              Ciência da Computação,tenho 19 anos e sou apaixonado por carreira
-              com foco em criar interfaces modernas e responsivas,
-              tecnologia.Estou construindo minha carreira sempre buscando
-              aplicar boas práticas de usabilidade e performance.
-            </p>
-            <div className=" mt-[4vh]"> 
-              <a href="/pdf/Currículo.pdf (1).pdf"   className="flex bg-[#e64e4e] p-2.5 w-[30vh] justify-center rounded-2xl ">CURRICULO</a></div>
-            
-            <div className="flex overflow-y-hidden space-x-8 mt-[3vh] ">
-              <div className="bg-[#1a1b268a] w-[95px] h-[52px] rounded-2xl hover:bg-[#19212c]">
-                <a
-                  href="https://github.com/KaikySsouza"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex justify-center  "
-                >
-                  <FontAwesomeIcon icon={faGithub} size="3x" className="mt-1" />
-                </a>
-              </div>
-              <div className="bg-[#1a1b268a] w-[95px] h-[52px] rounded-2xl hover:bg-[#19212c]">
-                <a
-                  href="https://www.linkedin.com/in/kaiky-souza-7202a5265/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex justify-center"
-                >
-                  <FontAwesomeIcon
-                    icon={faLinkedin}
-                    size="3x"
-                    className="mt-1"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="flex relative ">
-            <Cloud>
-              {icons}
-              <a
-                href="https://emojipedia.org/globe-showing-americas/"
-                target="_blank"
-                rel="noopener"
-              >
-                <img
-                  height="42"
-                  width="42"
-                  alt="A globe"
-                  src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/globe-showing-americas_1f30e.png"
-                />
-              </a>
-            </Cloud>
-          </div>
+    <div>
+      <section className="flex items-center h-screen bg-[#0A0E14] font-sans ">
+        <div className=" flex justify-baseline space-x-[85vh] ml-[5vh]">
+          <div>
+        <div>
+          <h1 className="text-[25px] text-[#22C55E]">Bem vindo!, meu nome é:</h1>
+          <p className="text-[70px] text-white font-medium">Kaiky Souza.</p>
         </div>
+
+        <h2 className="text-[25px] text-gray-400"> Desenvolvedor Full Stack</h2>
+
+        <div className="mb-10">
+          <p className="text-[15px] text-gray-400">Construindo experiências digitais <br /> modernas, rápidas e responsivas</p>
+        </div>
+
+        <div className=" flex justify-baseline space-x-10 text-center items-center ">
+        <button className="bg-[#22C55E] p-4 w-[18vh] rounded-2xl cursor-pointer text-white"> Ver projetos</button>
+        <button className="rounded-2xl p-4  border-white border-1 cursor-pointer text-white flex justify-center w-[18vh]  ">Baixar CV <GoDownload  className="m-1"/>
+</button>
+        </div>
+        </div>
+        <img className="rounded-3xl" src="images/ScreenShoot_AbraMulti.jpg" alt="img.jpg" width={300} />
+      </div>
+      
       </section>
     </div>
   );
