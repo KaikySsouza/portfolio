@@ -1,27 +1,5 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
- import { GoDownload } from "react-icons/go";
-import { Cloud, renderSimpleIcon } from "react-icon-cloud";
-import {
-  siJavascript,
-  siNextdotjs,
-  siReact,
-  siBootstrap,
-  siHtml5,
-  siCss,
-  siNodedotjs,
-  siTailwindcss,
-  siExpress,
-  siFigma,
-  siGithub,
-  siGit,
-  siSequelize,
-  siMysql,
-  siMongodb,
-  siFirebase,
-  siClickup,
-  siTypescript,
-} from "simple-icons";
+import { GoDownload } from "react-icons/go";
+
 
 function Home() {
   // const maquina = document.getElementById("maquina");
@@ -43,34 +21,6 @@ function Home() {
   //   .pauseFor(2500)
   //   .start();
 
-  const icons = [
-    siJavascript,
-    siTypescript,
-    siNextdotjs,
-    siReact,
-    siBootstrap,
-    siHtml5,
-    siCss,
-    siNodedotjs,
-    siTailwindcss,
-    siExpress,
-    siFigma,
-    siGithub,
-    siGit,
-    siSequelize,
-    siMysql, 
-    siMongodb,
-    siFirebase,
-    siClickup,
-  ].map((icon) => {
-    return renderSimpleIcon({
-      icon,
-      size: 62,
-      aProps: {
-        onClick: (e) => e.preventDefault(),
-      },
-    });
-  });
 
   return (
     <div>
@@ -79,7 +29,7 @@ function Home() {
           <div>
         <div>
           <h1 className="text-[25px] text-[#22C55E]">Bem vindo!, meu nome é:</h1>
-          <p className="text-[70px] text-white font-medium">Kaiky Souza.</p>
+          <p className="text-[70px] text-white font-medium">Kaiky Souza<span className="text-[#22C55E]">.</span></p>
         </div>
 
         <h2 className="text-[25px] text-gray-400"> Desenvolvedor Full Stack</h2>
