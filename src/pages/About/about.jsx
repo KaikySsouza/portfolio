@@ -13,7 +13,7 @@ function About() {
         <p className="mb-5">Sou desenvolvedor Full Stack apaixonado por tecnologia 
           e por criar soluções que realmente fazem a diferença</p>
         <p>Atualmente estou cursando <strong>Ciências da Computação </strong>
-        e trabalhando constantemente para evoluir minhas habilidades e tregar projetos de qualidade</p>
+        e trabalhando constantemente para evoluir minhas habilidades e entregar projetos de qualidade</p>
 
         </div>
 
