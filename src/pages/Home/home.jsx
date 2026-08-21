@@ -2,48 +2,56 @@ import { GoDownload } from "react-icons/go";
 import { FaGithub, FaInstagram} from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import { TbBrandLinkedin } from "react-icons/tb";
-import { BsMouse2 } from 'react-icons/bs';
-import MouseScrollIcon from "./MouseScroll";
+import Typewriter from 'typewriter-effect/dist/core';
+import { useEffect, useRef} from "react";
 function Home() {
-  // const maquina = document.getElementById("maquina");
 
-  // // eslint-disable-next-line no-undef
-  // const typewriter = new Typewriter(maquina, {
-  //   autoStart: false,
-  //   loop: true,
-  //   delay: 75,
-  // });
+    const maquinaRef = useRef(null);
+  const typewriterRef = useRef(null);
+  useEffect(() => {
+    if (!maquinaRef.current) return;
 
-  // // eslint-disable-next-line no-undef
-  // typewriter
+    typewriterRef.current = new Typewriter(maquinaRef.current, {
+      autoStart: true,
+      loop: true,
+      delay: 75,  
+    });
 
-  //   .typeString("Meu nome é </Kaiky>")
-  //   .pauseFor(2500)
-  //   .deleteChars(20)
-  //   .typeString("Seja bem vindo ao meu portfolio")
-  //   .pauseFor(2500)
-  //   .start();
+    typewriterRef.current
+      .typeString("Desenvolvedor Full Stack ")
+      .pauseFor(2500)
+      .deleteChars(20)
+      .start();
+
+    // cleanup: evita instâncias duplicadas (React StrictMode roda o efeito 2x em dev)
+    return () => {
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+      const el = maquinaRef.current;
+      if (el) el.innerHTML = "";
+      typewriterRef.current = null;
+    };
+  }, []);
 
 
   return (
-    <div className="flex items-center h-screen bg-[#0A0E14] font-sans ">
+    <div className="flex items-center min-h-screen bg-[#0A0E14]   ">
       <section name="home" className="mt-10">
-        <div className=" flex justify-baseline space-x-[85vh] ml-[5vh] ">
+        <div className=" flex justify-baseline space-x-[85vh] ml-[5vh] mt-8">
           <div>
         <div>
-          <h1 className="text-[25px] text-[#22C55E]">Bem vindo!, meu nome é:</h1>
-          <p className="text-[70px] text-white font-medium">Kaiky Souza<span className="text-[#22C55E]">.</span></p>
+          <h1 className="text-[25px] text-[#22C55E] overflow-hidden mb-3">Bem vindo!, meu nome é:</h1>
+          <p className="text-[70px] text-white font-medium  leading-[1.1] overflow-y-hidden mb-5 ">Kaiky Souza<span className="text-[#22C55E]">.</span></p>
         </div>
 
-        <h2 className="text-[25px] text-gray-400"> Desenvolvedor Full Stack</h2>
+        <h2 id="maquina" ref={maquinaRef} className="  text-gray-400 text-[25px] leading-[1.2] mb-3"> </h2>
 
         <div className="mb-10">
           <p className="text-[15px] text-gray-400">Construindo experiências digitais <br /> modernas, rápidas e responsivas</p>
         </div>
 
         <div className=" flex justify-baseline space-x-10 text-center items-center ">
-        <button className="bg-[#22C55E] p-4 w-[18vh] rounded-2xl cursor-pointer text-white"> Ver projetos</button>
-         <button className="rounded-2xl p-4  border-white border-1 cursor-pointer text-white  flex justify-center w-[18vh]  ">   <a className="flex" href="public/pdf/Kaiky_Souza_Curriculo.pdf"  target="_blank" rel="noopener noreferrer" >Baixar CV <GoDownload  className="m-1"/></a>  </button> 
+        <button className="bg-[#22C55E] p-4 w-[20vh] rounded-2xl cursor-pointer text-white"> Ver projetos</button>
+        <a   className="rounded-2xl p-4 border-white border-1 cursor-pointer text-white flex justify-center items-center gap-2 w-[20vh]" href="public/pdf/Kaiky_Souza_Curriculo.pdf"  target="_blank" rel="noopener noreferrer" >Baixar CV  <GoDownload/></a>  
       
         </div>
      

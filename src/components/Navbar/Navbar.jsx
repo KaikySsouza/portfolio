@@ -16,7 +16,7 @@ function Navbar() {
           <li>
             <ul className="inline-flex  text-[20px] text-white space-x-8">
               <li className="   p-2 rounded-2xl cursor-pointer">
-                <Link to={"/"}>Home</Link>
+                <Link to="home" smooth={true} duration={900} offset={-500}>Home</Link>
               </li>
               <li className="  p-2 rounded-2xl cursor-pointer">
                 <Link to="about" smooth={true} duration={800} offset={-80}>
