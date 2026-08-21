@@ -1,6 +1,9 @@
 import { GoDownload } from "react-icons/go";
-
-
+import { FaGithub, FaInstagram} from "react-icons/fa";
+import { MdOutlineEmail } from "react-icons/md";
+import { TbBrandLinkedin } from "react-icons/tb";
+import { BsMouse2 } from 'react-icons/bs';
+import MouseScrollIcon from "./MouseScroll";
 function Home() {
   // const maquina = document.getElementById("maquina");
 
@@ -23,9 +26,9 @@ function Home() {
 
 
   return (
-    <div>
-      <section className="flex items-center h-screen bg-[#0A0E14] font-sans ">
-        <div className=" flex justify-baseline space-x-[85vh] ml-[5vh]">
+    <div className="flex items-center h-screen bg-[#0A0E14] font-sans ">
+      <section name="home" className="mt-10">
+        <div className=" flex justify-baseline space-x-[85vh] ml-[5vh] ">
           <div>
         <div>
           <h1 className="text-[25px] text-[#22C55E]">Bem vindo!, meu nome é:</h1>
@@ -41,13 +44,29 @@ function Home() {
         <div className=" flex justify-baseline space-x-10 text-center items-center ">
         <button className="bg-[#22C55E] p-4 w-[18vh] rounded-2xl cursor-pointer text-white"> Ver projetos</button>
         <button className="rounded-2xl p-4  border-white border-1 cursor-pointer text-white flex justify-center w-[18vh]  ">Baixar CV <GoDownload  className="m-1"/>
-</button>
+        </button>
         </div>
+     
+      <div className="flex justify-baseline gap-8 text-[26px] absolute bottom-20  " >
+        <FaGithub className="text-white"/>
+        <TbBrandLinkedin  className="text-white"/>
+        <FaInstagram className="text-white"/>
+        <MdOutlineEmail className="text-white"/>
+        
+       </div>
+ 
+        
+ 
         </div>
-        <img className="rounded-3xl" src="images/ScreenShoot_AbraMulti.jpg" alt="img.jpg" width={300} />
+        <img className="rounded-3xl" src="images/Perfil-png.png" alt="img.jpg" width={400} />
       </div>
       
       </section>
+   
+
+
+    
+
     </div>
   );
 }

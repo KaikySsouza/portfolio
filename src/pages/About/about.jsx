@@ -1,31 +1,53 @@
-import SoftSkills from "./SoftSkills/Softskills";
-import HardSkills from "./HardSkills/HardSkills";
+import { PiSealCheckDuotone } from "react-icons/pi";
+import { LuBrain } from "react-icons/lu";
+import { FcIdea } from "react-icons/fc";
+import Technology from "./HardSkills/Technology";
 function About() {
   return (
     <div>
-      <section className="flex items-center justify-center min-h-screen">
-        <div className="flex">
-          <div className="bg-[#1F2937] p-8 rounded-2xl  mx-auto break-words ">
-            <h2 className="text-[25px] w-[vh] font-light m-6 text-justify text-gray-100 leading-relaxed ">
-              Sou um desenvolvedor web focado em criar interfaces modernas,
-              dinâmicas e intuitivas. Tenho sólida experiência com React.js,
-              JavaScript, HTML e CSS, o que me permite desenvolver aplicações
-              responsivas, acessíveis e com ótima usabilidade. No back-end,
-              utilizo Node.js para criar APIs eficientes e escaláveis. Estou em
-              constante aprendizado, sempre buscando evoluir como desenvolvedor
-              full stack e aplicar soluções criativas aos desafios do dia a dia.
-              Fora do ambiente de desenvolvimento, gosto de jogar basquete,
-              treinar na academia e aproveitar momentos de lazer, atividades que
-              fortalecem meu foco, disciplina e equilíbrio — qualidades que
-              também aplico no meu trabalho.
-            </h2>
-          </div>
+      <section name="about"  className="flex justify-baseline   h-screen gap-[35vh] bg-[#0A0E14] font-sans ">
+        <div className="flex flex-col ml-[5vh]">
+        <h1 className="text-[40px] text-white font-medium mb-5">Sobre mim<span className="text-[#22C55E] ">:</span></h1>
+
+      <div className="w-[60vh] text-[18px] text-gray-400 mb-10 ">
+        <p className="mb-5">Sou desenvolvedor Full Stack apaixonado por tecnologia 
+          e por criar soluções que realmente fazem a diferença</p>
+        <p>Atualmente estou cursando <strong>Ciências da Computação </strong>
+        e trabalhando constantemente para evoluir minhas habilidades e tregar projetos de qualidade</p>
+
         </div>
+
+
+        <div className="text-gray-400 flex flex-col  ">
+          
+          <p className="space-x-2"> <PiSealCheckDuotone className="inline "/><strong>Foco em performance e boas práticas</strong></p>
+          <p className="space-x-2"> <LuBrain className="inline  "   /><strong>Sempre aprendendo algo novo</strong></p>
+          <p className="space-x-2"> <FcIdea  className="inline "/><strong>Gosto de transformar ideias em soluções</strong></p>
+        </div>
+
+
+        <div className="flex   text-[26px] mt-10">
+
+        <Technology />  
+        </div>
+     
+        </div>
+
+          
+          
+         <div>
+        <img className="rounded-3xl" src="images/ScreenShoot_AbraMulti.jpg" alt="img.jpg" width={400} />
+        </div>
+
+
+
+
+        
       </section>
       
-    <HardSkills/>
+     
 
-    <SoftSkills/>
+    
     </div>
   );
 }
